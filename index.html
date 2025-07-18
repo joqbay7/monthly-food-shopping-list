@@ -19,5 +19,43 @@
             <p class="app-description">Organize suas compras mensais de alimentos de forma simples e eficiente</p>
         </div>
     </header>
+
+    <main class="container">
+        <section class="add-item-section">
+            <h2>Adicionar Item</h2>
+            <form id="add-item-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="item-name">Nome do Item</label>
+                        <input type="text" id="item-name" placeholder="Ex.: Arooz" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="item-quantity">Quantidade</label>
+                        <input type="number" id="item-quantity" min="1" value="1">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="item-category">Categoria</label>
+                        <select id="item-category">
+                            <option value="grains">Cereais e Grãos</option>
+                            <option value="produce">Frutas e Vegetais</option>
+                            <option value="dairy">Laticínios</option>
+                            <option value="meat">Carnes</option>
+                            <option value="hygiene">Higiene e Limpeza</option>
+                            <option value="other">Outros</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="item-price">Preço Estimado (R$)</label>
+                        <input type="number" id="item-price" step="0.01" min="0">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Adicionar Item</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
