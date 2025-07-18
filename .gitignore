@@ -1,0 +1,15 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Dependencies and environments
+/node_modules
+/.env
+
+# Logs and temporary files
+*.log
+/tmp
+
+# IDE directories
+/.vscode
+/.idea
