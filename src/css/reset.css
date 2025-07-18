@@ -1,0 +1,154 @@
+/*
+ * Reset CSS Profissional
+ * Um reset CSS mais abrangente e moderno para projetos web profissionais
+ * Inclui reset para elementos modernos e corrige problemas comuns de layout
+ */
+
+/* Box sizing universal */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Corrige problemas de linha de altura em todos os elementos */
+html, body {
+  height: 100%;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Remove estilos padrão de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove decorações de links e mantém cores herdadas */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Elementos de bloco padrão assumem largura total */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove o estilo padrão das citações */
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* Padroniza elementos de formulário */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Corrige problemas de posição vertical de imagens */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove inconsistências de estilo para tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Garante que os elementos interativos sejam clicáveis */
+label,
+button,
+select,
+summary,
+[type=radio],
+[type=submit],
+[type=checkbox] {
+  cursor: pointer;
+}
+
+/* Remover estilos de foco visíveis para usuários de mouse, mantendo para teclado */
+:focus {
+  outline: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent, #4a6fa5);
+  outline-offset: 2px;
+}
+
+/* Impedir seleção de texto em elementos não editáveis */
+:not(input):not(textarea):not([contenteditable]),
+[contenteditable="false"] {
+  user-select: none;
+}
+
+/* Estilizar a seleção de texto */
+::selection {
+  background-color: var(--color-accent, #4a6fa5);
+  color: white;
+}
