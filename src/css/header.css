@@ -1,0 +1,132 @@
+@import url('/src/css/variables.css');
+/* 
+ * Header Responsivo Profissional
+ * Implementado com técnicas modernas de CSS
+ */
+
+/* Configuração básica do header */
+.app-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--color-primary);
+    padding: var(--spacing-md) 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: var(--spacing-md);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: white;
+    transition: transform var(--transition);
+}
+
+.logo svg {
+    transition: transform 0.3s ease;
+}
+
+.logo:hover svg {
+    transform: translateY(-2px);
+}
+
+.logo span {
+    letter-spacing: 0.5px;
+}
+
+
+/* Navegação principal */
+.main-navigation {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.nav-menu {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 500;
+      padding: var(--spacing-xs) var(--spacing-sm);
+      transition: color 0.2s ease;
+      position: relative;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+/* Indicador de link ativo com animação */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-accent);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-link.active {
+    color: white;
+}
+
+/* Ações de navegação (botões) */
+.nav-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+    align-items: center;
+}
+
+/* Botão de tamanho pequeno para o header */
+.btn-sm {
+    padding:0.4rem 0.75rem;
+}
+
+#theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    transition: var(--transition);
+}
+
+#theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: rotate(15deg);
+}
