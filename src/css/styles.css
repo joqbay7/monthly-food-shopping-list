@@ -1,28 +1,3 @@
-/* Variables and base settings */
-/* (Variáveis e configurações base) */
-:root {
-  --color-primary: #4a6fa5;
-  --color-primary-dark: #385d8a;
-  --color-secondary: #6b7a8f;
-  --color-accent: #f7882f;
-  --color-accent-light: #f9a03f;
-  --color-success: #5cb85c;
-  --color-danger: #d9534f;
-  --color-light: #f5f5f5;
-  --color-gray: #ddd;
-  --color-text: #333;
-  --color-text-light: #666;
-  --border-radius: 6px;
-  --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  --transition: all 0.3s ease;
-  --spacing-xs: 0.25rem;
-  --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 1.5rem;
-  --spacing-xl: 2rem;
-  --spacing-xxl: 3rem;
-  --font-family: 'Roboto', sans-serif;
-}
 
 /* Base styles - complementing reset.css */
 /* (Estilos base - complementando reset.css) */
@@ -46,7 +21,7 @@ h1, h2, h3 {
 }
 
 /* Header */
-.app-header {
+/* .app-header {
   background-color: var(--color-primary);
   color: white;
   padding: var(--spacing-xl) 0;
@@ -60,6 +35,6 @@ h1, h2, h3 {
 .app-description {
   opacity: 0.9;
   font-weight: 300;
-}
+} */
 /* Header */
 
