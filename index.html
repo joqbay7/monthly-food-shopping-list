@@ -5,20 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Monthly food shopping list to plan your grocery shopping">
     <title>Lista de Compras de Alimentos do Mês</title>
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/normalize.css">
-    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header app-header-->
     <header class="app-header">
-        <div class="container">
-            <h1>Lista de Compras de Alimentos do Mês</h1>
-            <p class="app-description">Organize suas compras mensais de alimentos de forma simples e eficiente</p>
-        </div>
-    </header>
+        <div class="container">  <!-- container-->
+            <div class="header-wrapper"> <!-- header-wrapper-->
+                <div class="logo-container"> <!-- logo-container -->
+                    <a href="/" class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                        <span>Lista de Compras</span>
+                    </a>
+                </div> <!-- logo-container -->
+
+                <button class="mobile-menu-toggle" aria-label="Menu Principal" aria-expanded="false" aria-controls="main-nav">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                <nav id="main-nav" class="main-navigation" aria-label="Menu Principal">
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#" class="nav-link" active>Inicio</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" active>Minhas Listas</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" active>Catogorias</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" active>Historico</a></li>
+                    </ul>
+                    
+                    <div class="nav-actions">
+                        <button class="btn btn-secondary btn-sm" id="theme-toggle" aria-label="Alternar tema">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                        </button>
+                        <a href="#" class="btn btn-primary btn-sm">Minha Conta</a>
+                    </div>
+                </nav>
+            </div> <!-- header-wrapper-->
+
+            <div class="header-content">
+                <h1>Lista de Compras de Alimentos do Mês</h1>
+                <p class="app-description">Organize suas compras mensais de alimentos de forma simples e eficiente</p>
+            </div>
+        </div> <!-- container-->
+    </header>  <!-- Header app-header-->
 
     <main class="container">
         <section class="add-item-section">
