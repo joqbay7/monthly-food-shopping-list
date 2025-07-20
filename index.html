@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="/src/js/header.js" defer></script>
+    <script src="/src/js/main.js" defer></script>
 </head>
 <body>
     <!-- Header app-header-->
@@ -26,11 +28,13 @@
                     </a>
                 </div> <!-- logo-container -->
 
-                <button class="mobile-menu-toggle" aria-label="Menu Principal" aria-expanded="false" aria-controls="main-nav">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
+            
+                    <button class="mobile-menu-toggle" aria-label="Menu Principal" aria-expanded="false" aria-controls="main-nav">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                
 
                 <nav id="main-nav" class="main-navigation" aria-label="Menu Principal">
                     <ul class="nav-menu">
@@ -66,8 +70,8 @@
         </div> <!-- container-->
     </header>  <!-- Header app-header-->
 
-    <main class="container">
-        <section class="add-item-section">
+    <main class="container"> <!-- Main container -->
+        <section class="add-item-section"> <!-- section add-item-section -->
             <h2>Adicionar Item</h2>
             <form id="add-item-form">
                 <div class="form-row">
@@ -101,7 +105,7 @@
 
                 <button type="submit" class="btn btn-primary">Adicionar Item</button>
             </form>
-        </section>
-    </main>
+        </section> <!-- section add-item-section -->
+    </main> <!-- Main container -->
 </body>
 </html>
